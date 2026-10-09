@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #059669;
+    --color-primary-dark: #065f46;
+    --color-primary-light: #ecfdf5;
+    --color-accent-amber: #d97706;
+    --color-accent-sky: #0284c7;
+  }
+
+  body {
+    font-family: 'Prompt', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f7f9f6;
+    color: #1e293b;
+    letter-spacing: normal;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .font-mono-numbers {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Custom smooth subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* Custom visual utilities for refined wellness aesthetic */
+@layer utilities {
+  .bg-wellness-mesh {
+    background-color: #f7f9f6;
+    background-image: 
+      radial-gradient(at 15% 10%, rgba(16, 185, 129, 0.06) 0px, transparent 45%),
+      radial-gradient(at 85% 15%, rgba(245, 158, 11, 0.04) 0px, transparent 40%),
+      radial-gradient(at 50% 90%, rgba(14, 165, 233, 0.04) 0px, transparent 50%),
+      radial-gradient(at 80% 85%, rgba(16, 185, 129, 0.03) 0px, transparent 40%);
+  }
+
+  .wellness-card {
+    background: #ffffff;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.02), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .wellness-card:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -2px rgba(16, 185, 129, 0.06);
+  }
+
+  .text-balance-thai {
+    text-wrap: balance;
+    line-height: 1.65;
+  }
+}
